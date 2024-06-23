@@ -7,9 +7,9 @@ int factorial(int b);
 
 int main(){
     int n, sum;
-    cin>>n;
+    cout<<"Cantidad de sumandos:"; cin>>n;
     sum=sumatoria(n);
-    cout<<sum;
+    cout<<"La sumatoria es "<<sum<<endl;
     return 0;
 }
 
@@ -17,7 +17,7 @@ int sumatoria(int a){
     int s;
     s=0;
     for(int i=1; i<=a; i++){
-        s=s+(factorial(i)/(2*i));
+        s=s+(factorial(i)/(3*i));
     }
     return s;
 }
