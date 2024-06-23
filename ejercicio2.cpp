@@ -21,8 +21,9 @@ int main(){
         else{
             cout<<"Son PESI"<<endl;
         }
-    }
-    else{
+        }
+        else{
         cout<<"Numero(s) no admitido(s), ingrese 2 numeros positivos";
     }
     return 0;
+}
