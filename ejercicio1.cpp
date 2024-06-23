@@ -4,23 +4,31 @@
 using namespace std;
 int main(){
     int op1, op2, op, r;
-    cin>>op1;
-    cin>>op2;
-    cin>>op;
+    cout<<"Ingrese el primer operando:"; cin>>op1;
+    cout<<"Ingrese el segudno operando:"; cin>>op2;
+    cout<<"Ingrese el operador:"; cin>>op;
     switch(op){
     case '+':
         r=op1+op2;
+        cout<<r;
         break;
     case '-':
         r=op1-op2;
+        cout<<r;
         break;
     case '*':
         r=op1*op2;
+        cout<<r;
         break;
     case '/':
-        r=op1/op2;
+        if(op2!=0){
+            r=op1/op2;
+            cout<<r;
+        }
+        else{
+            cout<<"Resultado indefinido o indeterminado";
+        }
         break;
     }
-    cout<<r;
     return 0;
 }
