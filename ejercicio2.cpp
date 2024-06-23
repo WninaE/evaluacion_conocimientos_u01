@@ -8,7 +8,7 @@ int main(){
     cout<<"Ingrese el segundo numero:";cin>>n2;
     c=0;
     i=1;
-    if(n1>=1 && n2>=1){
+    if(n1>=2 && n2>=2){
         while(i<=n1 && i<=n2){
             if(n1%i==0 && n2%i==0){
                 c=c+1;
